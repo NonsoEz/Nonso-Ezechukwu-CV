@@ -5,99 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <link type="image/x-icon" rel="shortcut icon" href="https://res.cloudinary.com/xavier/image/upload/c_thumb,w_138/v1566596085/profile_krcn0g.jpg">
+    <!--MAIN STYLESHEET-->
     <link type="text/css" rel="stylesheet" href="css/style.css">
-    <title>Xavier | Ezechukwu Nonso</title>
+    <title>Ezechukwu Nonso |  Francis-Xavier</title>
 </head>
 
 <body>
 
     <div class="navbar responsive">
         <a class="active" href="#top"><i class="fa fa-fw fa-home"></i> Home</a>
-        <a href="#Obj"><i class="fa fa-fw fa-search"></i> Objectives</a>
-        <a href="#CE"><i class="fa fa-fw fa-envelope"></i> Current Engagement</a>
-        <a href="#Other"><i class="fa fa-fw fa-user"></i> Other Experiences</a>
+        <a href="#Obj"><i class="fa fa-fw fa-search"></i> About</a>
+        <a href="#Skill"><i class="fa fa-fw fa-user"></i> Skills</a>
         <a href="#Edu"><i class="fa fa-fw fa-user"></i> Education</a>
         <a href="#Cert"><i class="fa fa-fw fa-user"></i> Certifications</a>
-        <a href="#Skill"><i class="fa fa-fw fa-user"></i> Skills</a>
+
+        <button id="myBtn">Contact Me</button>
     </div>
 
-    <div class="head_nav" id="top">
-        <img src="https://res.cloudinary.com/xavier/image/upload/v1567029119/profile_d4blar.jpg" alt="My photo" sizes="0px" alt="Nonso E.">
-        <strong><h1>Ezechukwu, Nonso E.</h1>
-        <p>Full Stack Engineer</p>
-        </strong>
-        <p id="head_p">
-            <em>Lagos, Nigeria <br>+234 817 059 5471 <br>
-              <a href="mailto:ezechukwu.nonso@yahoo.com">
-                Send me a mail
-            </a>
-          </em>
-        </p>
+    <!--THE MODAL-->
+    <div id="myModal" class="modal">
+        <!--MODAL CONTENT-->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="containerr">
+                <form action="action_page.php">
+
+                    <label for="fname">Full Name</label>
+                    <input type="text" minlength="4" id="fname" name="firstname" placeholder="Your full name..">
+
+                    <label for="email">Email</label>
+                    <input type="email" required id="email" name="mail" placeholder="Your E-mail..">
+
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="textTitle" placeholder="Title..">
+
+                    <label for="msg">Message</label>
+                    <textarea id="msg" minlength="20" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                    <input type="submit" value="Submit">
+
+                </form>
+            </div>
+        </div>
     </div>
+
+    <section id="welcome">
+        <div class="name-plate">
+            <h1>Nonso E.</h1>
+            <h1>Full Stack Engineer</h1>
+
+        </div>
+    </section>
 
     <div class="timeline">
         <div class="container left" id="Obj">
             <div class="content">
-                <h2>Objectives</h2>
+                <h2>About Me</h2>
                 <p>Nonso Ezechukwu is a highly motivated and goal-oriented individual with a B.Sc. in Computer Science. He possesses sound analytical skills, excellent interpersonal communication skills, leadership qualities, enjoys tackling problems and
                     challenges to obtain solutions and also very eager to learn new skills. Through a series of internships, he has been able to expand his scope of knowledge and develop the necessary skills needed in an organization. An aspiring Product
-                    Development Specialist, currently taking steps to achieve this goal.</p>
-            </div>
-
-        </div>
-
-        <div class="container right" id="CE">
-            <div class="content">
-                <h2>Current Engagement:</h2>
-                <P>FEB 2019 - DATE</P>
-                <P>IT Officer (NYSC) / Pan-Atlantic University (PAU), Lagos
-                    <ul>
-                        <li>Troubleshooting network concerns.</li>
-                        <li>Assisting users in person and remotely with hardware-related concerns.</li>
-                        <li>Data recovery.</li>
-                        <li>Supporting audio-visual interface with computer workstations and telecommunications technologies.</li>
-                        <li>Utilizing technical training to resolve concerns related to software functionality.</li>
-                    </ul>
-                </P>
-            </div>
-
-        </div>
-
-        <div class="container left" id="Other">
-            <div class="content">
-                <h2>Other Experiences:</h2>
-                <P>AUG 2018 – JAN 2019</P>
-                <P>Intern / Insyt Analytics (FacebookStart Accelerator Team), Lagos
-                    <ul>
-                        <li>Designed company roadmap, cash flow, project implementation plan and business model canvas among many other vital company documents.</li>
-                        <li>Collaborate closely with product and design teams to ensure operational team processes are factored into new product development plans and designs, and to integrate solutions to identify user experience issues in upcoming versions.</li>
-                        <li>Gather key member/customer insights and feedback for the Product team to influence the roadmap/prioritization of potential product changes.</li>
-                        <li>Understand and communicate all upcoming product feature and user experience changes to our other key stakeholders (Operations, Marketing).</li>
-                        <li>Developed go-to market strategy.</li>
-                        <li>Pitch to potential investors</li>
-                        <li>Identify, design, and build product improvements and help drive efficiency.</li>
-                    </ul>
-                </P>
-            </div>
-        </div>
-
-        <div class="container right">
-            <div class="content">
-                <p>MAY 2017 – DEC 2017</p>
-                <p>Intern / Prime Infrastructure and Engineering Services Limited, Lagos
-                    <ul>
-                        <li>Resolved network connectivity problems for end-users in the organization.</li>
-                        <li>Fixed both software and hardware-related PC faults for end-users.</li>
-                        <li>Setup, deployed and carried out maintenance on printers across departments.</li>
-                        <li>Filed critical documents, sent memos and ensured delivery on behalf of a Team Manager.</li>
-                        <li>Assisted project managers and site engineers in coordinating, managing, upgrading and refurbishing of BTS sites</li>
-                        <li>Assisted NOC manager in researching, identifying and implementing processes as well as recommend tools required to enhance efficiencies of the NOC operations.</li>
-                    </ul>
+                    Development Specialist, currently taking steps to achieve this goal.
                 </p>
             </div>
         </div>
 
+        <div class="container right" id="Skill">
+            <div class="content">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Web Development - HTML/CSS/Javascript</li>
+                    <li>Problem Solving </li>
+                    <li>Communication </li>
+                    <li>Leadership</li>
+                    <li>Negotiation/Persuasion</li>
+                    <li>Strategic Planning</li>
+                    <li>Project Management</li>
 
+                </ul>
+            </div>
+
+        </div>
         <div class="container left" id="Edu">
             <div class="content">
                 <h2>Education</h2>
@@ -110,11 +95,8 @@
                 </p>
                 <p>JULY 2014</p>
                 <p>West African Senior School Certificate Examination / Bellina College, Lagos
-                    <li>Assistant Head Prefect & Health Prefect </li>
-                    <li>Football captain</li>
                 </p>
             </div>
-
         </div>
 
         <div class="container right" id="Cert">
@@ -127,22 +109,6 @@
                 </ul>
             </div>
         </div>
-
-        <div class="container left" id="Skill">
-            <div class="content">
-                <h2>Skills</h2>
-                <ul>
-                    <li>Problem Solving </li>
-                    <li>Communication </li>
-                    <li>Leadership</li>
-                    <li>Negotiation/Persuasion</li>
-                    <li>Strategic Planning</li>
-                    <li>Project Management</li>
-                    <li>Web Development - HTML & CSS</li>
-                </ul>
-            </div>
-
-        </div>
         <br>
     </div>
 
@@ -151,6 +117,35 @@
             <p>All rights reserved &copy; 2019</p>
         </div>
     </footer>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+  
 </body>
 
 </html>
