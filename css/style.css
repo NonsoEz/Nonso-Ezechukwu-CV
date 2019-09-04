@@ -175,7 +175,7 @@ input[type=submit]:hover {
 
 #welcome {
     height: 100vh;
-    background: url(https://res-console.cloudinary.com/xavier/thumbnails/transform/v1/image/upload/ZV9zYXR1cmF0aW9uOjgw/v1567515809/bmV3LWJhbm5lcl9sMGZteXE=/template_primary);
+    background: url(https://res.cloudinary.com/xavier/image/upload/v1567515809/new-banner_l0fmyq.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
