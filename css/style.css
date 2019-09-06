@@ -186,20 +186,22 @@ input[type=submit]:hover {
 }
 
 #welcome .name-plate {
-    width: 60%;
+    width: 48%;
     height: 50%;
     text-align: start;
-    margin-top: 350px;
+    margin-top: 536px;
     padding-left: 20px;
 }
 
 .name-plate h1 {
-    font-size: 4.5em;
+    padding: -5px;
+    font-size: 3.0em;
     font-weight: 900;
-    line-height: 1em;
-    color: #000000;
+    line-height: -0.5em;
+    font-family: 'Nunito', sans-serif;
     padding: -5px;
 }
+
 
 .name-plate ul li {
     width: 80%;
